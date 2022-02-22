@@ -1,0 +1,3 @@
+[submodule "dyondo-model"]
+	path = dyondo-model
+	url = https://github.com/4romgod/dyondo-model.git
