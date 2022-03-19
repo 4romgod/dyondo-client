@@ -7,7 +7,8 @@
   "scripts": {
     "build": "npm install && npm run build-model && npm run gen-client && tsc",
     "build-model": "git submodule foreach 'npm install && npm run build'",
-    "gen-client": "openapi-generator-cli generate -i dyondo-model/build/swagger/dyondo.api.yaml -g typescript-axios -o openapi-client --additional-properties=ngVersion=6.1.7,npmName=restClient,supportsES6=true,npmVersion=6.9.0,useSingleRequestParameter=true"
+    "gen-client": "openapi-generator-cli generate -i dyondo-model/build/swagger/dyondo.api.yaml -g typescript-axios -o openapi-client --additional-properties=ngVersion=6.1.7,npmName=restClient,supportsES6=true,npmVersion=6.9.0,useSingleRequestParameter=true",
+    "pull-modules": "git submodule foreach git pull origin master"
   },
   "keywords": [],
   "author": "",
