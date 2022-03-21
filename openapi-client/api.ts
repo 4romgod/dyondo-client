@@ -123,7 +123,7 @@ export const DyondoApiAxiosParamCreator = function (configuration?: Configuratio
         deleteRemoveTag: async (slug: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'slug' is not null or undefined
             assertParamExists('deleteRemoveTag', 'slug', slug)
-            const localVarPath = `/tag/{slug}`
+            const localVarPath = `/tags/{slug}`
                 .replace(`{${"slug"}}`, encodeURIComponent(String(slug)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -422,7 +422,7 @@ export const DyondoApiAxiosParamCreator = function (configuration?: Configuratio
         getRetrieveTag: async (slug: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'slug' is not null or undefined
             assertParamExists('getRetrieveTag', 'slug', slug)
-            const localVarPath = `/tag/{slug}`
+            const localVarPath = `/tags/{slug}`
                 .replace(`{${"slug"}}`, encodeURIComponent(String(slug)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -710,7 +710,7 @@ export const DyondoApiAxiosParamCreator = function (configuration?: Configuratio
             assertParamExists('putUpdateTag', 'slug', slug)
             // verify required parameter 'tag' is not null or undefined
             assertParamExists('putUpdateTag', 'tag', tag)
-            const localVarPath = `/tag/{slug}`
+            const localVarPath = `/tags/{slug}`
                 .replace(`{${"slug"}}`, encodeURIComponent(String(slug)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
